@@ -4,7 +4,7 @@ var fs = require('fs');
 var path = require('path');
 var jwt = require('jsonwebtoken');
 
-var securit = require('../middleware/securit')
+var securit = require('../middleware/scrumblecode')
 var users = require('../fake-database/user.json');
 
 
