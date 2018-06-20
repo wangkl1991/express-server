@@ -3,6 +3,7 @@ var cors = require('cors');
 var express = require('express');
 var http = require('http');
 var path = require('path');
+require('./config/config');
 
 // declare routers
 
@@ -12,6 +13,11 @@ app.use(bodyParser.json());
 app.use(cors());
 
 var authRoutes = require('./routes/auth.routes');
+
+// Set up mongoDB connection
+var mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
+mongoose.connect(process.env.MONGODB_URI, { useMongoClient: true});
 
 // define routers
 app.use('/auth', authRoutes);

@@ -50,6 +50,10 @@ router.post('/login', function(req, res) {
 /**
 *  Register a new user
 */
+router.post('/test', function(req, res) {
+  console.log(req.body , req.headers)
+})
+
 router.post('/signup', function(req, res) {
 
   // set up a message object to pass to client side.
