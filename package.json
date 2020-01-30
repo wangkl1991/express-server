@@ -2,7 +2,7 @@
   "name": "express-server",
   "version": "1.0.0",
   "description": "express mongodb",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -15,13 +15,15 @@
   "author": "kailun",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.4",
-    "express": "^4.16.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "epsagon": "^1.49.1",
+    "express": "^4.17.1",
     "fs": "0.0.1-security",
     "http": "0.0.0",
-    "jsonwebtoken": "^8.3.0",
-    "lodash": "^4.17.10",
-    "path": "^0.12.7"
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "path": "^0.12.7",
+    "serverless-http": "^2.3.1"
   }
 }
